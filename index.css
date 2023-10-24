@@ -1,0 +1,31 @@
+
+
+.container {
+    width: 800px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1px solid rgb(145, 145, 145);
+    margin: 0 auto;
+}
+
+.messageboard {
+    padding: 20px 0 5px 10px;
+
+}
+
+.messageboard__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.messageboard__subtitle {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.messageboard__subtitle-text {
+    margin-right: 5px;
+}
