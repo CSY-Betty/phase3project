@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="../static/index.css" />
+	</head>
+	<body>
+		<main class="container">
+			<section class="messageboard">
+				<div class="messageboard__title">發表一篇圖文</div>
+				<form enctype="multipart/form-data">
+					<div class="messageboard__subtitle">
+						<div class="messageboard__subtitle-text">文字內容</div>
+						<input type="text" id="textInput" />
+					</div>
+					<div class="messageboard__subtitle">
+						<div class="messageboard__subtitle-text">圖片檔案</div>
+						<input type="file" id="imageInput" />
+					</div>
+
+					<button id="submitButton">送出</button>
+				</form>
+			</section>
+			<ul class="message-list">
+				{% for message, imageurl in messages %}
+				<li class="message-item">
+					<p class="message-text">{{ message }}</p>
+					<img
+						class="message-image"
+						src="{{ imageurl }}"
+						alt="Image"
+					/>
+				</li>
+				{% endfor %}
+			</ul>
+		</main>
+		<script defer type="module" src="../static/index.js"></script>
+	</body>
+</html>

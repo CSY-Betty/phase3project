@@ -9,8 +9,11 @@
     margin: 0 auto;
 }
 
+/* 發佈留言
+------------------- */
 .messageboard {
     padding: 20px 0 5px 10px;
+    border-bottom: 1px solid rgb(145, 145, 145);
 
 }
 
@@ -28,4 +31,22 @@
 
 .messageboard__subtitle-text {
     margin-right: 5px;
+}
+
+
+/* 留言區
+------------------- */
+.message-list {
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+}
+
+.message-item {
+    border-bottom: 1px solid slategray;
+}
+
+.message-image {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
 }
