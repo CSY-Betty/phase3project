@@ -1,0 +1,8 @@
+version: '3'
+services:
+  phase3project:
+    image: bettychenn/phase3project:1.2
+    ports:
+      - 3100:3100
+    env_file:
+      - .env
