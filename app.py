@@ -93,4 +93,4 @@ def generate_cloudfront_link(distribution_domain, object_name):
     return f"https://{distribution_domain}/{object_name}"
 
 
-app.run(host="0.0.0.0", port=3100, debug=True)
+app.run(host="0.0.0.0", port=3100)
